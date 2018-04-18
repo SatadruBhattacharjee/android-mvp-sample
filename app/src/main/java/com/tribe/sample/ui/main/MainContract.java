@@ -9,6 +9,7 @@ public class MainContract {
     public interface MainView {
 
         void renderMovieList(List<Movie> movies);
+
     }
 
     public interface Presenter {
