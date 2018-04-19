@@ -10,6 +10,8 @@ public class MainContract {
 
         void renderMovieList(List<Movie> movies);
 
+        void showError(String msg);
+
     }
 
     public interface Presenter {

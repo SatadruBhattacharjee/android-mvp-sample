@@ -8,12 +8,12 @@ import java.util.List;
 
 public class MainPresenter implements MainContract.Presenter, MovieRepository.MovieListListener {
 
-    private MainContract.MainView mMainView;
+    private MainContract.MainView mainView;
     private MovieRepository movieRepository;
 
-    public MainPresenter (MainContract.MainView mainView) {
-        this.mMainView = mainView;
-        movieRepository = new MovieRepository();
+    public MainPresenter (MainContract.MainView mainView, MovieRepository movieRepository) {
+        this.mainView = mainView;
+        this.movieRepository = movieRepository;
     }
 
     @Override
@@ -23,12 +23,12 @@ public class MainPresenter implements MainContract.Presenter, MovieRepository.Mo
 
     @Override
     public void onFailure(String message) {
-
+        mainView.showError(message);
     }
 
     @Override
     public void onMovieListReceived(List<Movie> movies) {
-        this.mMainView.renderMovieList(movies);
+        mainView.renderMovieList(movies);
     }
 
 }
