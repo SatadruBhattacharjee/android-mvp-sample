@@ -29,6 +29,10 @@ public class MovieRepository {
         return Config.POSTER_URL + name;
     }
 
+    public static String getMovieBackdropUrl(String name) {
+        return Config.BACKDROP_URL + name;
+    }
+
 
 
     // =============================================================================

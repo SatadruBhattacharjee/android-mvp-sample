@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVPSample</string>
+    <string name="read_more">Movie Description</string>
+    <string name="movie_details">It is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. The story is a new direction for the series, as it is loosely based on Norse mythology—all previous games were based on Greek mythology.</string>
 </resources>
